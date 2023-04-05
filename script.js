@@ -1,68 +1,62 @@
-const money = document.getElementById('money-value')
-let currentMoneyValue = parseInt(money.value)
+let money = 0;
+let autoclickers = 0;
+let multiplier = 1;
+let autoclickerInterval;
+let autoclickerSpeed = 1000;
 
-const clickers = document.getElementById('autoclickers-value')
-const clickerBtn = document.getElementById('clickerBtn')
-const cabangValue = document.getElementById('cabang-value')
-const multiplierBtn = document.getElementById('multiplier-button')
-const image = document.getElementById('image')
-const getMoneyValueBtn = document.getElementById('getMoneyValue')
-const autoClickerBtn = document.getElementById('autoclickerBtn')
+const moneyValue = document.getElementById("money-value");
+const autoclickersValue = document.getElementById("autoclickers-value");
+const clickerBtn = document.getElementById("clickerBtn");
+const cabangValue = document.getElementById("cabang-value");
+const multiplierButton = document.getElementById("multiplier-button");
 
-
-
-clickerBtn.addEventListener('click', () => {
-    let clickerCost = 10
-    if(currentMoneyValue >= clickerCost) {
-        let currentClickersValue = parseInt(clickers.value)
-        currentClickersValue++;
-        clickers.value = currentClickersValue
-        currentMoneyValue = currentMoneyValue -= clickerCost
-        autoClickerBtn.style.display = "block"
-        clickerCost.innerHTML = clickerCost * currentClickersValue
-    }else{
-        alert('Uang Tidak Cukup Untuk Membeli Auto Clicker')
+clickerBtn.addEventListener("click", function() {
+  if (money >= 10) {
+    money -= 10;
+    autoclickers += 1;
+    autoclickersValue.value = autoclickers;
+    if (autoclickers === 1) {
+      autoclickerInterval = setInterval(function() {
+        money += multiplier;
+        moneyValue.value = money;
+      }, autoclickerSpeed);
+    } else {
+      clearInterval(autoclickerInterval);
+      autoclickerSpeed = autoclickerSpeed / autoclickers;
+      autoclickerInterval = setInterval(function() {
+        money += multiplier;
+        moneyValue.value = money;
+      }, autoclickerSpeed);
     }
-})
-
-multiplierBtn.addEventListener ('click', () => {
-
-    const multiplierCost = 50
-    if(currentMoneyValue >= multiplierCost) {
-        let currentCabangValue = parseInt(cabangValue.value)
-        currentCabangValue++
-        cabangValue.value = currentCabangValue
-        currentMoneyValue = currentMoneyValue -= multiplierCost
-      
+  } else {
+    alert('Uang Tidak Cukup Untuk Membeli Auto Clicker');
+  }
+});
 
 
+multiplierButton.addEventListener("click", function() {
+  if (money >= 50) {
+    money -= 50;
+    multiplier += 1;
+    cabangValue.value = multiplier - 1;
+  } else {
+    alert('Uang Tidak Cukup Untuk Membeli Multiplier')
+  }   
+});
 
-    }else {
-        alert('Uang Tidak Cukup Untuk Membeli Multiplier')
+const getMoneyValue = document.getElementById("getMoneyValue");
+const image = document.getElementById("image");
+let clicked = false;
+
+getMoneyValue.addEventListener("click", function() {
+    if (!clicked) {
+      image.src = "images/telur-menetas.png";
+      clicked = true;
+    } else {
+      image.src = "images/ayamtelur.png.png";
+      clicked = false;
     }
+    money += 1 * multiplier;
+    moneyValue.value = money;
+});
 
-
-    
-})
-
-
-
-getMoneyValueBtn.addEventListener('click', () => {
-
-    image.src = 'images/telur-menetas.png'
-
-    currentMoneyValue += 1;
-
-    money.value = currentMoneyValue
-
-}) 
-
-
-autoClickerBtn.addEventListener('click', () => {
-    
-   let newMoneyValue = currentMoneyValue
-
-   newMoneyValue++;
-   money.innerHTML = newMoneyValue;
-
-})
