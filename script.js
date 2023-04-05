@@ -10,14 +10,16 @@ const getMoneyValueBtn = document.getElementById('getMoneyValue')
 const autoClickerBtn = document.getElementById('autoclickerBtn')
 
 
+
 clickerBtn.addEventListener('click', () => {
-    const clickerCost = 10
+    let clickerCost = 10
     if(currentMoneyValue >= clickerCost) {
         let currentClickersValue = parseInt(clickers.value)
         currentClickersValue++;
         clickers.value = currentClickersValue
         currentMoneyValue = currentMoneyValue -= clickerCost
         autoClickerBtn.style.display = "block"
+        clickerCost.innerHTML = clickerCost * currentClickersValue
     }else{
         alert('Uang Tidak Cukup Untuk Membeli Auto Clicker')
     }
@@ -38,12 +40,16 @@ multiplierBtn.addEventListener ('click', () => {
     }else {
         alert('Uang Tidak Cukup Untuk Membeli Multiplier')
     }
+
+
+    
 })
+
 
 
 getMoneyValueBtn.addEventListener('click', () => {
 
-    image.src = 'images/telur-menetas.png'
+    image.src = 'assets/image/telur-menetas.png'
 
     currentMoneyValue += 1;
 
@@ -52,3 +58,11 @@ getMoneyValueBtn.addEventListener('click', () => {
 }) 
 
 
+autoClickerBtn.addEventListener('click', () => {
+    
+   let newMoneyValue = currentMoneyValue
+
+   newMoneyValue++;
+   money.innerHTML = newMoneyValue;
+
+})
