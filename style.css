@@ -1,0 +1,13 @@
+.navbar {
+    background-color: rgb(210, 207, 211);
+}
+
+#menu ul li {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+}
+
+#logo img {
+    margin-right: auto;
+}
