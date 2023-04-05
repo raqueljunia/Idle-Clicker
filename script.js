@@ -49,7 +49,7 @@ multiplierBtn.addEventListener ('click', () => {
 
 getMoneyValueBtn.addEventListener('click', () => {
 
-    image.src = 'assets/image/telur-menetas.png'
+    image.src = 'images/telur-menetas.png'
 
     currentMoneyValue += 1;
 

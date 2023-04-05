@@ -1,0 +1,56 @@
+.content {
+    background-color: rgba(150, 170, 197);
+}
+
+.header {
+    padding-top: 26px;
+}
+
+.card {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 7px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding: 15px;
+    width: 250px;
+    box-shadow: -7px 7px 10px rgba(88, 94, 78, 0.999)
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+ul li{
+    display: inline-block;
+}
+
+.card-name {
+    margin-top: 17px;
+    margin-bottom: 1px;
+    font-weight: bold;
+}
+
+.card-nim {
+    font-weight: 500;
+}
+
+.card-text {
+    margin-bottom: 22px;
+}
+
+.social-icons img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 30px;
+}
+
+#footer {
+    padding-bottom: 20px;
+}
