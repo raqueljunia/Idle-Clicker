@@ -10,7 +10,6 @@ const getMoneyValueBtn = document.getElementById('getMoneyValue')
 const autoClickerBtn = document.getElementById('autoclickerBtn')
 
 
-
 clickerBtn.addEventListener('click', () => {
     const clickerCost = 10
     if(currentMoneyValue >= clickerCost) {
@@ -39,16 +38,12 @@ multiplierBtn.addEventListener ('click', () => {
     }else {
         alert('Uang Tidak Cukup Untuk Membeli Multiplier')
     }
-
-
-    
 })
-
 
 
 getMoneyValueBtn.addEventListener('click', () => {
 
-    image.src = 'assets/image/telur-menetas.png'
+    image.src = 'images/telur-menetas.png'
 
     currentMoneyValue += 1;
 
