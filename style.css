@@ -1,7 +1,18 @@
+body {
+    zoom: 80%;
+}
+
+#game-menu {
+    background-color: rgb(150, 199, 186);
+}
+
 #page-content {
     padding-left: 30px;
     padding-right: 30px;
-    background-color: rgb(245, 221, 225);
+    width: 100%;
+    background-image: url('images/table2.png');
+    background-position: center 200px;
+    background-repeat: no-repeat;
     padding-top: 30px;
     padding-bottom: 40px;
 }
@@ -11,6 +22,7 @@
 }
 
 .header-image {
+    box-shadow: none;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -20,6 +32,77 @@
     margin-bottom: 30px;
 }
 
-.clickimage img {
-    border-radius: 0%;
+#getMoneyValue {
+    border: none;
+}
+
+.col-md-4 button:hover {
+    transition: all ease-in .1s
+}
+
+button:hover {
+    transform: scale(0.98);
+}
+
+.container .header-upgrade {
+    padding-top: 25px;
+}
+
+.container h5 {
+    margin-top: -18px;
+    padding-bottom: 9px;
+}
+
+.upgrade-items {
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(240, 239, 234);
+    padding: 1rem;
+    box-sizing: border-box;
+    column-gap: 15px;
+}
+
+.item_main {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.item_main img {
+    height: 80px;
+    margin: auto;
+    display: block;
+}
+
+.item button {
+    width: 96%;
+    border: none;
+    outline: none;
+    background-color:#424fc4;
+    padding: 0.4rem;
+    box-sizing: border-box;
+    color:white;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: all ease-in .1s;
+}
+
+.item button:hover {
+    background-color: rgb(234, 208, 79) ;
+}
+
+.game .main .items .item p {
+    text-align: center;
+    margin-top: 5px;
+}
+
+#music {
+    justify-content: right;
 }

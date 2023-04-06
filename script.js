@@ -5,6 +5,8 @@ let autoclickerInterval;
 let autoclickerSpeed = 1000;
 const maxAutoclicker = 3;
 const maxMultiplier = 11;
+var soundEffect = new Audio("assets/bell.wav");
+var audio = document.getElementById("my-audio");
 
 const moneyValue = document.getElementById("money-value");
 const autoclickersValue = document.getElementById("autoclickers-value");
@@ -61,15 +63,17 @@ let clicked = false;
 
 getMoneyValue.addEventListener("click", function() {
     if (!clicked) {
-      image.src = "images/telur-menetas.png";
+      image.src = "images/pizza2.png";
       clicked = true;
+      soundEffect.play();
     } else {
-      image.src = "images/ayamtelur.png.png";
+      image.src = "images/pizza1.png";
       clicked = false;
     }
     money += 1 * multiplier;
     moneyValue.value = money;
 });
+
 
 // Upgrade Items
 const firstUpgradeButton = document.getElementById("first-upgrade-btn");
@@ -87,9 +91,10 @@ firstUpgradeButton.addEventListener("click", function() {
       upgradeActive = false;
     }, 8000);
   } else {
-    alert('Uang Tidak Cukup Untuk Mengaktifkan Tahu Isi');
+    alert('Uang Tidak Cukup Untuk Upgrade Fresh Salad');
   }
 });
+
 const secondUpgradeButton = document.getElementById("second-upgrade-btn");
 let upgradeActive2 = false;
 
@@ -106,11 +111,12 @@ secondUpgradeButton.addEventListener("click", function() {
       upgradeActive2 = false;
     }, 13000);
   } else {
-    alert('Uang Tidak Cukup Untuk Mengaktifkan Risol');
+    alert('Uang Tidak Cukup Untuk Upgrade Cream Soup');
   }
 });
 
 const thirdUpgradeButton = document.getElementById("third-upgrade-btn");
+
 thirdUpgradeButton.addEventListener("click", function() {
   if (money >= 30000) {
     money -= 30000;
@@ -134,7 +140,6 @@ thirdUpgradeButton.addEventListener("click", function() {
       }, autoclickerSpeed);
     }, 17000);
   } else {
-    alert('Uang Tidak Cukup Untuk Mengaktifkan Cakwe');
+    alert('Uang Tidak Cukup Untuk Upgrade Spaghetti');
   }
 });
-
