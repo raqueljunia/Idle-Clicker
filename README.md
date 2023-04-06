@@ -11,15 +11,14 @@ Idle Clicker merupakan Game yang menggunakan konsep clicker, dimana pengguna har
 
 Fitur :
 
-- Mampu meregenerate dan mengurangkan money secara tepat sesuai dengan fitur yang ada dalam game
+- Mampu meregenerate dan mengurangkan uang secara tepat sesuai dengan fitur yang ada dalam game
 - Mengaktifkan fitur autoclicker yang kecepatan auto-clicknya bertambah setiap pembelian
 - Mengaktifkan fitur multiplier yang menambahkan nilai value sebanyak +1 dalam setiap pembelian multiplier
 - Membatasi pembelian Autoclickers maximal 3 kali
 - Membatasi pembelian Multiplier maximal 10 kali
 - Mengaktifkan perubahan gambar secara bergantian dalam setiap click manual yang dilakukan oleh player
 - Memiliki fitur upgrade item dengan efek yang dihasilkan sebabagi berikut :
-  ➤ Jual tahu isi : dapat memberikan kecepatan clicker sebanyak 3 kali lipat dalam 8 detik.
-  ➤ Jual risol : dapat mendouble money yang dihasilkan tiap click sebanyak 3 kali lipat dalam 13 detik.
-  ➤ Jual cakwe : dapat memberikan kecepatan clicker sebanyak 3 kali lipat dan juga menambahkan money yang dihasilkan tiap click sebanyak 3 kali lipat selama 17 detik
-
-
+  ➤ Fresh Salad : dapat memberikan kecepatan clicker sebanyak 3 kali lipat dalam 8 detik.
+  ➤ Cream Soup : dapat menambah jumlah uang (yang dihasilkan tiap click) sebanyak 3 kali lipat dalam 13 detik.
+  ➤ Spaghetti : dapat memberikan kecepatan clicker sebanyak 3 kali lipat dan juga menambahkan jumlah uang (yang dihasilkan tiap click) sebanyak 3 kali lipat selama 17 detik
+- Menambahkan sound effect dalam game

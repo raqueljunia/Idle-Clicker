@@ -1,4 +1,13 @@
-body {
+@font-face {
+    font-family: "Comics-Deluxe";
+    src: url('assets/Comics-Deluxe.otf'); 
+    src: url('assets/Comics-Deluxe?#iefix') format('embedded-opentype'), 
+         url('assets/Comics-Deluxe.woff') format('woff'), 
+         url('assets/Comics-Deluxe.ttf')  format('truetype'), 
+         url('assets/Comics-Deluxe.svg#svgFontName') format('svg');
+}
+  
+  body {
     zoom: 80%;
 }
 
@@ -18,7 +27,11 @@ body {
 }
 
 .heading {
-    margin-bottom: 30px;
+    font-family: "Comics-Deluxe";
+    font-size: 35px;
+    color: rgb(207, 10, 4);
+    text-shadow: 2px 3px 1px rgb(101, 101, 101);
+    margin-bottom: 40px;
 }
 
 .header-image {
@@ -28,6 +41,9 @@ body {
 }
 
 .header-upgrade {
+    font-weight: bold;
+    color: yellow;
+    text-shadow: 2px 2px 1px rgb(48, 48, 48);
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -60,7 +76,7 @@ button:hover {
     width: 90%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    background-color: rgb(240, 239, 234);
+    background-color: rgb(223, 223, 219);
     padding: 1rem;
     box-sizing: border-box;
     column-gap: 15px;
