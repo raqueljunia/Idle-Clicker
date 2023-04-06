@@ -73,5 +73,22 @@ getMoneyValue.addEventListener("click", function() {
 
 // Upgrade Items
 const firstUpgradeButton = document.getElementById("first-upgrade-btn");
+let upgradeActive = false;
+
+firstUpgradeButton.addEventListener("click", function() {
+  if (money >= 10000 && !upgradeActive) {
+    money -= 10000;
+    multiplier *= 3;
+    cabangValue.value = multiplier - 1;
+    upgradeActive = true;
+    setTimeout(function() {
+      multiplier /= 3;
+      cabangValue.value = multiplier - 1;
+      upgradeActive = false;
+    }, 8000);
+  } else {
+    alert('Uang Tidak Cukup Untuk Mengaktifkan Tahu Isi');
+  }
+});
 const secondUpgradeButton = document.getElementById("second-upgrade-btn");
 const thirdUpgradeButton = document.getElementById("third-upgrade-btn");
