@@ -41,62 +41,65 @@
       </div>
     </nav>
     <!-- Content -->
-    <h3 class="text-center">Idle Clicker Game (Tahu Bulat)</h3>
-    <div class="row d-flex justify-content-center ms-2 mt-3">
-      <div class="col-md-4">
-        <p>
-          Money:
-          <input
-            id="money-value"
-            type="number"
-            class="w-90"
-            value="0"
-            disabled
-          />
-        </p>
+    <div id="page-content">
+      <h3 class="heading text-center">Idle Clicker Game (Tahu Bulat)</h3>
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-3">
+          <p>
+            Money:
+            <input
+              id="money-value"
+              type="number"
+              class="w-90"
+              value="0"
+              disabled
+            />
+          </p>
+        </div>
+        <div class="col-md-4">
+          <p>
+            Autoclickers:
+            <input value="0" class="w-90" id="autoclickers-value" disabled />
+          </p>
+          <p>Cost : 10</p>
+          <button class="btn btn-success" id="clickerBtn">
+            Buy Auto-Clicker <span id="max-autoclicker"></span>
+          </button>
+        </div>
+        <div class="col-md-4">
+          <p>
+            Buka Cabang Tahu Bulat:
+            <input id="cabang-value" value="0" disabled class="w-90" />
+          </p>
+          <p>Cost : 50</p>
+          <button class="btn btn-success" id="multiplier-button">
+            Buy Multiplier <span id="max-multiplier"></span>
+          </button>
+        </div>
       </div>
-      <div class="col-md-4">
-        <p>
-          Autoclickers:
-          <input value="0" class="w-90" id="autoclickers-value" disabled />
-        </p>
-        <p>Cost : 10</p>
-        <button class="btn btn-success" id="clickerBtn">
-          Buy Auto-Clicker
-        </button>
-      </div>
-      <div class="col-md-4">
-        <p>
-          Buka Cabang Tahu Bulat:
-          <input id="cabang-value" value="0" disabled class="w-90" />
-        </p>
-        <p>Cost : 50</p>
-        <button class="btn btn-success" id="multiplier-button">
-          Buy Multiplier
-        </button>
-      </div>
-    </div>
 
-    <div class="row d-flex">
-      <div class="col-md-4 mt-2">
-        <h2>Upgrades Dagangan</h2>
-        <button>Jual Tahu Isi</button> <span>10000</span>
-        <br />
-        <button>Jual Risol</button> <span>20000</span>
-        <br />
-        <button>Jual Cakwe</button> <span>30000</span>
-      </div>
-      <div class="col-md-8 mt-2">
-        <h2 class="text-center">Click Tahu</h2>
-        <button class="ms-4 bg-transparent border-none" id="getMoneyValue">
-          <img
-            src="images/ayamtelur.png.png"
-            alt=""
-            width="200"
-            class="border-none"
-            id="image"
-          />
-        </button>
+      <div class="row d-flex">
+        <div class="clickimage text-center">
+          <h5 class="header-image">Click Tahu</h5>
+          <button class="bg-transparent border-none" id="getMoneyValue">
+            <img
+              src="images/ayamtelur.png.png"
+              alt=""
+              height="200"
+              class="border-none"
+              id="image"
+            />
+          </button>
+        </div>
+        <div class="upgrades text-center">
+          <h4 class="header-upgrade">Upgrade Items</h4>
+          <button id="first-upgrade-btn">Jual Tahu Isi</button>
+          <span>10000</span>
+          <br />
+          <button id="second-upgrade-btn">Jual Risol</button> <span>20000</span>
+          <br />
+          <button id="third-upgrade-btn">Jual Cakwe</button> <span>30000</span>
+        </div>
       </div>
     </div>
 
