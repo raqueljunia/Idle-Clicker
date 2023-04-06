@@ -91,4 +91,50 @@ firstUpgradeButton.addEventListener("click", function() {
   }
 });
 const secondUpgradeButton = document.getElementById("second-upgrade-btn");
+let upgradeActive2 = false;
+
+secondUpgradeButton.addEventListener("click", function() {
+  if (money >= 20000 && !upgradeActive2) {
+    money -= 20000;
+    upgradeActive2 = true;
+    let initialMultiplier = multiplier;
+    multiplier *= 3;
+    cabangValue.value = multiplier - 1;
+    setTimeout(function() {
+      multiplier = initialMultiplier;
+      cabangValue.value = multiplier - 1;
+      upgradeActive2 = false;
+    }, 13000);
+  } else {
+    alert('Uang Tidak Cukup Untuk Mengaktifkan Risol');
+  }
+});
+
 const thirdUpgradeButton = document.getElementById("third-upgrade-btn");
+thirdUpgradeButton.addEventListener("click", function() {
+  if (money >= 30000) {
+    money -= 30000;
+    let initialSpeed = autoclickerSpeed;
+    autoclickerSpeed /= 3;
+    multiplier *= 3;
+    cabangValue.value = multiplier - 1;
+    clearInterval(autoclickerInterval);
+    autoclickerInterval = setInterval(function() {
+      money += multiplier;
+      moneyValue.value = money;
+    }, autoclickerSpeed);
+    setTimeout(function() {
+      autoclickerSpeed = initialSpeed;
+      multiplier /= 3;
+      cabangValue.value = multiplier - 1;
+      clearInterval(autoclickerInterval);
+      autoclickerInterval = setInterval(function() {
+        money += multiplier;
+        moneyValue.value = money;
+      }, autoclickerSpeed);
+    }, 17000);
+  } else {
+    alert('Uang Tidak Cukup Untuk Mengaktifkan Cakwe');
+  }
+});
+
