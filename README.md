@@ -7,7 +7,7 @@ Anggota Kelompok 1 - Kelas HL :
 - Rifqah Aulia Salsabilla [00000077820]
 - Yohanes Andre Yanto [00000061457]
 
-Idle Clicker merupakan Game yang menggunakan konsep clicker, dimana pengguna harus mengklik objek untuk mendapatkan poin atau uang. Pengguna kemudian dapat menggunakan uang tersebut untuk membeli upgrade agar dapat menghasilkan uang lebih banyak. disini kami memakai avatar anak ayam dan ayam. pengguna bisa memencet ayam nya berkali - kali untuk mendapatkan uang dan pengguna dapat menggunakan uang tersebut untuk membeli upgrade seperti yang sudah dijelaskan di awal. dan user akan diberi peringatan jika uang nya tidak mencukupi ketika ingin membeli upgrade yang sudah di sediakan. kami juga memiliki fitur "about us" berisi data diri anggota kelompok.
+Idle Clicker merupakan Game yang menggunakan konsep clicker, dimana pengguna harus mengklik objek untuk mendapatkan poin atau uang. Pengguna kemudian dapat menggunakan uang tersebut untuk membeli upgrade agar dapat menghasilkan uang lebih banyak. disini kami memakai gambar pizza. pengguna bisa memencet pizza nya berkali - kali untuk mendapatkan uang dan pengguna dapat menggunakan uang tersebut untuk membeli upgrade seperti yang sudah dijelaskan di awal. dan pengguna akan diberi peringatan jika uang nya tidak mencukupi ketika ingin membeli upgrade yang sudah di sediakan. kami juga memiliki fitur "about us" berisi data diri anggota kelompok.
 
 Fitur :
 
