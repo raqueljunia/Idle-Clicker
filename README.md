@@ -1,3 +1,5 @@
+Github : https://github.com/raqueljunia/Idle-Clicker.git
+
 Ini adalah proyek Ujian Tengah Semester 2 untuk mata kuliah 'Introduction to Internet Technology (Lab)'
 
 Anggota Kelompok 1 - Kelas HL :
